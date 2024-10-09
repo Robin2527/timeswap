@@ -6,10 +6,10 @@ import BorrowLoan from './components/BorrowLoan';
 import axios from 'axios';
 
 // Create a Wagmi client
-const client = createClient({
-  autoConnect: true,
-  provider: (provider) => provider,
-});
+// const client = createClient({
+//   autoConnect: true,
+//   provider: (provider) => provider,
+// });
 
 const App = () => {
   const [loans, setLoans] = useState([]);
@@ -44,14 +44,14 @@ const App = () => {
   };
 
   return (
-    <WagmiConfig client={client}>
+    // <WagmiConfig client={client}>
       <div>
         <h1>TimeSwap V2</h1>
         <AddLoan onAdd={handleAddLoan} editingLoan={editingLoan} onUpdate={handleUpdateLoan} />
         <LoanList loans={loans} onDelete={handleDeleteLoan} onEdit={handleEditLoan} />
         <BorrowLoan onBorrow={handleBorrowLoan} />
       </div>
-    </WagmiConfig>
+    // </WagmiConfig>
   );
 };
 
