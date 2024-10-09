@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+// import { CONTRACT_ADDRESSES, ABI } from './contracts';
+
+// // Example usage
+// const lendingContractAddress = CONTRACT_ADDRESSES.lendingContract;
+// const lendingContractABI = ABI.lendingABI;
+
+
 const AddLoan = ({ onAdd, editingLoan, onUpdate }) => {
   const [amount, setAmount] = useState('');
   const [collateral, setCollateral] = useState('');
