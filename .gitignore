@@ -1,0 +1,9 @@
+# Root directory ignores
+node_modules/
+.env
+package-lock.json
+
+# Client directory ignores
+/client/node_modules/
+/client/.env
+/client/package-lock.json
